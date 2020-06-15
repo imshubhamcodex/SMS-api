@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<button type="" onclick="send()">Send</button>
+	<script>
+		function send(){
+			var settings = {
+				"async": true,
+				"crossDomain": true,
+				"url": "https://www.fast2sms.com/dev/bulk?authorization=bLhTVlxWKv8sYJOynkBMCQPU2meNS3uAXjrZ5D47c6gqpi0a1obPWLc8ywd2tAZ1YgjN9GSBC5HnF0VI&sender_id=RLL&message=hi&language=english&route=p&numbers=8018439472,8888888888",
+				"method": "GET"
+			}
+
+			$.ajax(settings).done(function (response) {
+				console.log(response);
+			});
+		}
+	</script>
+</body>
+</html>
